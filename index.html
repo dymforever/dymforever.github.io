@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <title>Te Amo</title>
 </head>
 <body>
@@ -17,29 +18,12 @@
         <a href="/Contacto.html">Contacto</a>
     </div>
     <div class="Container">
-        <p id="timer"></p>
-        <p>Días Juntos ♥</p>
+        <p class="beat-text" id="timer"></p>
+        <p class="beat-text">Días Juntos <button class="cora-btn" id="play-btn">♥</button></p>
     </div>
+    <audio id="bg-music" autoplay loop>
+        <source src="Music/lofi-lofi-chill.mp3" type="audio/mpeg">
+    </audio>
 </body>
-<script>
-  // Fecha en que comenzo 💕
-  const fechaInicio = new Date("2025-05-01");
-  setInterval(() => {
-    const ahora = new Date();
-    // Normalizamos las horas a medianoche (00:00)
-    const inicio = new Date(
-        fechaInicio.getFullYear(), 
-        fechaInicio.getMonth(), 
-        fechaInicio.getDate()
-    );
-    const hoy = new Date(
-        ahora.getFullYear(), 
-        ahora.getMonth(), 
-        ahora.getDate()
-    );
-    const diferencia = hoy - inicio;
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    document.getElementById("timer").innerHTML = dias;
-  }, 1000);
-</script>
+<script src="scripts.js"></script>
 </html>
