@@ -1,22 +1,21 @@
 // Fecha en que comenzo 💕
 const fechaInicio = new Date("2025-05-01");
-setInterval(() => {
+const timerEl = document.getElementById("timer");
+
+function actualizarDias() {
     const ahora = new Date();
-    // Normalizamos las horas a medianoche (00:00)
-    const inicio = new Date(
-        fechaInicio.getFullYear(), 
-        fechaInicio.getMonth(), 
-        fechaInicio.getDate()
-    );
-    const hoy = new Date(
-        ahora.getFullYear(), 
-        ahora.getMonth(), 
-        ahora.getDate()
-    );
+    const inicio = new Date(fechaInicio.getFullYear(), fechaInicio.getMonth(), fechaInicio.getDate());
+    const hoy = new Date(ahora.getFullYear(), ahora.getMonth(), ahora.getDate());
     const diferencia = hoy - inicio;
     const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    document.getElementById("timer").innerHTML = dias;
-}, 1000);
+    timerEl.innerHTML = dias;
+}
+
+// Llamada inicial inmediata
+actualizarDias();
+
+// Luego actualizar cada segundo
+setInterval(actualizarDias, 1000);
 
 // Musica
 const audio = document.getElementById("bg-music");
