@@ -57,10 +57,11 @@ body {
     justify-content: center;
     align-items: center; 
     height: 100vh;
+    padding-top: 40px;
     text-align: center;
     color: #fff;
     -webkit-text-stroke: 0px #8f00c3; 
-    line-height: 1;
+    line-height: 0.5;
 }
 
 .Container p:nth-child(1) {
@@ -75,27 +76,24 @@ body {
 
 .Container p{
     margin: 0;
-    /*opacity: 0;
-    transform: translateY(100px);
-    animation: Aparicion 1s ease-out forwards, latido 2.5s infinite 1s;*/
 }
-
+.pop {
+    animation: pop 0.5s ease-out forwards;
+}
 /* Animación de entrada desde abajo */
-@keyframes Aparicion {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animación de latido */
-@keyframes latido {
-  0%   { transform: scale(1); }
-  10%  { transform: scale(1.12); }
-  20%  { transform: scale(1); }
-  30%  { transform: scale(1.18); }
-  40%  { transform: scale(1); }
-  100% { transform: scale(1); }
+@keyframes pop {
+  0% {
+    transform: scale(0); /* empieza pequeño */
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2); /* se agranda un poco */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1); /* tamaño normal */
+    opacity: 1;
+  }
 }
 
 .cora-btn {
