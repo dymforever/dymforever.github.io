@@ -1,0 +1,55 @@
+body {
+    background-image: url(images/Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.Nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.Nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.Nav a:hover {
+    color: #bb00ff;
+    transform: scale(1.2);
+    border-bottom: 2px solid #5a007a;
+    padding-bottom: 3px;         
+    transition: all 0.3s ease;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    text-align: center;
+}
+
+.Container p:nth-child(1) {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Container p:nth-child(2) {
+    font-size: 40px;
+    margin: 0;
+}
