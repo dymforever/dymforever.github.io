@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <title>Te Amo</title>
 </head>
 <body>
     <div class="Nav">
-        <a href="#">Home</a>
+        <a href="/Aniversarios.html">Aniversarios</a>
         <p>|</p>
-        <a href="#">Information</a>
+        <a href="/MomentosEsp.html">Momentos Especiales</a>
         <p>|</p>
-        <a href="#">About Me</a>
-        <p>|</p>
-        <a href="#">Contact</a>
+        <a href="/Contacto.html">Contacto</a>
     </div>
     <div class="Container">
-        <p>128</p>
-        <p>Día Juntos</p>
+        <p id="timer"></p>
+        <p>Días Juntos ♥</p>
     </div>
 </body>
+<script>
+  // Fecha en que comenzo 💕
+  const fechaInicio = new Date("2025-05-01");
+  setInterval(() => {
+    const ahora = new Date();
+    // Normalizamos las horas a medianoche (00:00)
+    const inicio = new Date(
+        fechaInicio.getFullYear(), 
+        fechaInicio.getMonth(), 
+        fechaInicio.getDate()
+    );
+    const hoy = new Date(
+        ahora.getFullYear(), 
+        ahora.getMonth(), 
+        ahora.getDate()
+    );
+    const diferencia = hoy - inicio;
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    document.getElementById("timer").innerHTML = dias;
+  }, 1000);
+</script>
 </html>
