@@ -1,12 +1,12 @@
 body {
-    background-image: url(images/Wallpaper.jpg);
+    background-image: url(../images/Wallpaper.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
     font-family: 'Great Vibes', cursive;
-    overflow: hidden; 
+    overflow: hidden;
 }
 /* Index */
 .Nav {

@@ -3,11 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/Styles-Book.css">
     <link rel="shortcut icon" href="/images/ico.png" type="image/x-icon">
     <title>Anniversary</title>
+
+    <style>
+    a {
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+      color: rgb(0, 0, 0); 
+      text-align: center;
+      font-size: 2.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #8f00c3;
+      transition: width 0.3s ease;
+    }
+
+    a:hover {
+      color: #8f00c3;
+      transform: scale(1.2);
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    
+<div class="container">
+  <h1>
+    <a href="index.html">
+        Nuestros Aniversarios
+    </a>
+  </h1>
+  <div class="sprite-wrapper">
+    <div class="book">
+      <!--  Carousel container -->
+      <div class="carousel" style="--slides: 7;">
+        <!--  Bg sprite -->
+        <div class="sprite"></div>
+        <!--  Carousel items -->
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div></div>
+            </div>
+            <div class="page right-page">
+              <div style="
+                display: grid;
+                justify-content: end;">
+                <p style="
+                    text-align: end;
+                    font-size: 1rem;
+                    padding-top: 1.6rem;
+                    padding-bottom: 1rem;">
+                    Nuestros Aniversarios
+                </p>
+                <p style="
+                    text-align: end;"> 
+                    <img style="
+                    width: 60%;
+                    border-radius: 100%;
+                    padding-bottom: 1rem;
+                    padding-right: 1rem;"
+                    src="images/Pandas.png" alt="">
+                </p>
+                <p style="
+                    text-align: end;
+                    font-size: 0.7rem;
+                    padding-bottom: 1rem;
+                    padding-right: 1rem;">
+                    Escrito por: Michelle Beltran y Diego Camino
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="page-container">
+
+            <div class="page left-page">
+              <div>
+                <p style="
+                    font-size: 1rem;
+                    text-align: center;
+                    color: purple;">
+                    1 de Mayo del 2025
+                </p>
+                <p style="margin: 0; text-indent: 1rem">
+                Ese día fui a recogerte para que conocieras a mis padres, y desde el primer momento 
+                me sorprendiste con lo linda que te veías. Pasamos la tarde riendo juntos, viendo videos 
+                de Auron jugando al Valorant y jugando, mientras disfrutábamos de cada instante.
+                <br>
+                En medio de todo, te pregunte si querías ser mi novia; 
+                cuando dijiste que sí, con esa emoción tan tuya, sentí que el corazón me explotaba 
+                de alegría. Ese instante marcó el inicio de esta hermosa historia que seguimos 
+                escribiendo juntos ♥.
+                </p>
+              </div>
+            </div>
+
+            <div class="page right-page">
+              <div>
+                <p style="
+                    font-size: 1rem;
+                    text-align: center;
+                    color: purple;">
+                    1 de Junio del 2025
+                </p>
+                <p>
+                    Ese día llegaste un poco estresada, y mi mayor alegría fue poder levantarte el ánimo. 
+                    Salimos a dar una vuelta, disfrutamos de un rico sushi y un helado que nos supo a calma.
+                     Al volver a casa, me acompañaste a armar mi nuevo escritorio, y aunque parecía algo 
+                     sencillo, se convirtió en un momento especial porque lo compartí contigo.
+                </p>
+                <img style="
+                    width: 30%;
+                    border-radius: 20%;
+                    margin-left: 30%" src="images/20250601.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div>
+                <p style="
+                    font-size: 1rem;
+                    text-align: center;
+                    color: purple;">
+                    1 de Julio del 2025
+                </p>
+                <p>
+                    Ese día te preparé una pequeña sorpresa y te invité a comer en Terreros. 
+                    Tenía para ti una chocolatina y un peluchito de Hello Kitty, 
+                    con la ilusión de sacarte una sonrisa.
+                    <br> 
+                    Pero la verdadera sorpresa fue la tuya: me regalaste un cuaderno en el que, 
+                    hoja por hoja, expresabas tu amor incondicional hacia mí. 
+                    <br>
+                    Ese detalle tan especial lo guardo con el corazón, porque refleja todo lo que somos 
+                    y lo mucho que significas en mi vida.
+                </p>
+              </div>
+            </div>
+            <div class="page right-page">
+              <div>
+                <img style="width: 45%;border-radius: 20%; margin-top: 0.5rem;"src="images/20250701.jpg" alt="">
+                <img style="width: 45%;border-radius: 20%; margin-left: 50%;"src="images/20250701a.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div>
+                <p style="
+                    font-size: 1rem;
+                    text-align: center;
+                    color: purple;">
+                    1 de Agosto del 2025
+                </p>
+              </div>
+            </div>
+            <div class="page right-page">
+              <div>
+                <p style="
+                    font-size: 1rem;
+                    text-align: center;
+                    color: purple;">
+                    1 de Septiembre del 2025
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div></div>
+            </div>
+            <div class="page right-page">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div></div>
+            </div>
+            <div class="page right-page">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div></div>
+            </div>
+            <div class="page right-page">
+              <div></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
